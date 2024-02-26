@@ -1,4 +1,8 @@
 all:
+  # hosts:
+  #   cloudvision:
+  #     ansible_host: 10-255-53-196.act.arista.com:443
+  #     ansible_password: "REDACTED_TOKEN"
   children:
     CVP:
       hosts:
