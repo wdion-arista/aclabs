@@ -1,3 +1,5 @@
+---
+
 - name: Configuration deployment
   hosts: FABRIC
   connection: local
@@ -7,9 +9,7 @@
       ansible.builtin.import_role:
         name: arista.avd.deploy_to_cv
       vars:
-        cv_server: 10-255-110-207.act.arista.com
-        cv_token: "{{ lookup('env', 'CV_SVC_TOKEN') }}"
         deploy_to_cv_accept_preview: true
-        cv_inventory_hostname: act_cv
+        cv_server: 10.255.53.196
+        cv_token: "REDACTED_TOKEN"
         cv_verify_certs: false
-        cv_workspace_name: ns
