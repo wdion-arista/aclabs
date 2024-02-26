@@ -11,5 +11,5 @@
       vars:
         deploy_to_cv_accept_preview: true
         cv_server: 10.255.53.196
-        cv_token: "REDACTED_TOKEN"
+        cv_token: "{{ lookup('env', 'CV_DEPLOY_TOKEN')}}"
         cv_verify_certs: false
